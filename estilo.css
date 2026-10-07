@@ -1,0 +1,21 @@
+@font-face { font-family: Pixel; src: url(PixelifySans.ttf); }
+:root { --bg: #0b2016; --panel: #133524; --line: #f7c948; --text: #fff1cc; --soft: #cfe3c8; --link: #f7c948; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: var(--link); }
+header { padding: 18px 16px; display: flex; align-items: center; gap: 12px; max-width: 960px; margin: auto; }
+header img { width: 44px; height: 44px; border-radius: 10px; }
+header a.marca { font-family: Pixel, sans-serif; font-size: 24px; color: var(--text); text-decoration: none; }
+nav { margin-left: auto; display: flex; gap: 16px; font-size: 15px; }
+.hero { width: 100%; max-height: 62vh; object-fit: cover; display: block; border-top: 3px solid var(--line); border-bottom: 3px solid var(--line); }
+main { max-width: 860px; margin: auto; padding: 8px 16px 48px; }
+h1, h2 { font-family: Pixel, sans-serif; font-weight: 400; color: var(--line); line-height: 1.2; }
+h1 { font-size: 40px; margin: 28px 0 6px; }
+h2 { font-size: 26px; margin-top: 36px; }
+h3 { color: var(--text); margin-bottom: 4px; }
+p, li { color: var(--soft); }
+.sub { font-size: 20px; color: var(--text); margin-top: 0; }
+.boton { display: inline-block; background: var(--line); color: #2a1805; font-family: Pixel, sans-serif; font-size: 20px; padding: 10px 22px; border-radius: 12px; text-decoration: none; margin: 8px 0; }
+.caja { background: var(--panel); border: 2px solid #2f5a3f; border-radius: 14px; padding: 4px 22px 14px; margin: 18px 0; }
+footer { text-align: center; font-size: 14px; color: #8fae93; padding: 24px 16px 40px; border-top: 1px solid #2f5a3f; }
+@media (max-width: 560px) { h1 { font-size: 30px; } nav { gap: 10px; } }
