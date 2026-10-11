@@ -1,0 +1,35 @@
+:root { --bg: #050805; --panel: #0e150e; --line: #1d2b1d; --neon: #39ff14; --text: #f1f5f1; --soft: #aab8aa; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: var(--neon); }
+.wrap { max-width: 1000px; margin: auto; padding: 0 20px; }
+header { position: sticky; top: 0; z-index: 5; background: rgba(5,8,5,.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+header .wrap { display: flex; align-items: center; gap: 16px; height: 56px; }
+header a.marca { font-weight: 800; letter-spacing: .12em; color: var(--text); text-decoration: none; }
+header a.marca b { color: var(--neon); }
+nav { margin-left: auto; display: flex; gap: 20px; font-size: 15px; }
+nav a { color: var(--soft); text-decoration: none; }
+nav a:hover { color: var(--neon); }
+.hero { text-align: center; padding: 40px 20px 56px; background: radial-gradient(ellipse at 50% 30%, #0f2a0a 0%, var(--bg) 65%); }
+.hero img { width: min(560px, 90%); height: auto; display: block; margin: 0 auto; }
+.hero h1 { margin: 6px 0 8px; font-size: clamp(24px, 4vw, 36px); }
+.hero p { margin: 0 auto; max-width: 560px; color: var(--soft); }
+section { padding: 40px 0 8px; }
+h2 { font-size: 28px; margin: 0 0 6px; }
+h2::after { content: ""; display: block; width: 48px; height: 3px; background: var(--neon); margin-top: 8px; border-radius: 2px; }
+h3.cat { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--neon); margin: 30px 0 12px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.app { display: flex; gap: 16px; background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 16px; text-decoration: none; color: inherit; transition: border-color .15s, transform .15s; }
+a.app:hover { border-color: var(--neon); transform: translateY(-2px); }
+.app img, .app .ph { width: 76px; height: 76px; border-radius: 18px; flex: none; }
+.app .ph { background: #151d15; border: 1px dashed #2c3d2c; display: grid; place-items: center; color: #4a5f4a; font-size: 28px; }
+.app h4 { margin: 0 0 2px; font-size: 18px; color: var(--text); }
+.app p { margin: 0; font-size: 14px; line-height: 1.45; color: var(--soft); }
+.app .tag { display: inline-block; margin-top: 8px; font-size: 12px; color: #0b1a07; background: var(--neon); padding: 2px 10px; border-radius: 99px; font-weight: 700; }
+.app .tag.soon { background: transparent; color: var(--soft); border: 1px solid #2c3d2c; }
+.about p, .soporte p { color: var(--soft); max-width: 720px; }
+.about strong { color: var(--text); }
+footer { margin-top: 56px; border-top: 1px solid var(--line); text-align: center; font-size: 14px; color: #6f806f; padding: 24px 16px 40px; }
+footer a { color: var(--soft); }
+@media (max-width: 560px) { nav { gap: 12px; font-size: 14px; } header a.marca { display: none; } nav { margin-left: 0; } }

@@ -4,35 +4,80 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hevi Studios</title>
-<meta name="description" content="Hevi Studios: juegos hechos en el Perú. Pelejo y los Guardianes Andinos.">
+<meta name="description" content="Hevi Studios: estudio peruano de juegos y apps útiles. Pelejo, NeuroRetos, Net Tool PRO y HogarSync.">
 <link rel="icon" href="favicon.png">
-<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="studio.css">
 </head>
 <body>
-<header>
-  <img src="img/icono.png" alt="">
-  <a class="marca" href="./">Hevi Studios</a>
-  <nav><a href="#pelejo">Pelejo</a><a href="#soporte">Soporte</a><a href="privacidad.html">Privacidad</a></nav>
-</header>
-<img class="hero" src="img/portada.jpg" alt="Pelejo, Wayra y Sipán corriendo por la selva, la sierra y la costa del Perú">
-<main>
-  <h1 id="pelejo">Pelejo y los Guardianes Andinos</h1>
-  <p class="sub">Un juego de plataformas hecho en el Perú, para toda la familia.</p>
-  <p>Hace mucho tiempo, las personas y los guardianes del Perú vivían en <em>ayni</em>: tú me cuidas, yo te cuido. Pero las personas olvidaron, y los guardianes se encerraron en su dolor. Pelejo el perezoso, Wayra la llama y Sipán el perro peruano viajan por la selva, la sierra y la costa para calmar a diez guardianes de leyenda: la Yacumama, el Chullachaqui, la Ayaymama, el Tunche, el Amaru, el Muki, el Ukuku, la Huacachina, Naylamp y Mama Cocha.</p>
-  <p>Corre, salta y vuela en 20 niveles, rescata a las crías de animales del Perú y descubre las leyendas detrás de cada guardián.</p>
-  <p><a class="boton" href="#">Próximamente en el App Store</a></p>
+<header><div class="wrap">
+  <a class="marca" href="./">HEVI <b>STUDIOS</b></a>
+  <nav><a href="#apps">Apps</a><a href="#nosotros">Nosotros</a><a href="#soporte">Soporte</a><a href="privacidad.html">Privacidad</a></nav>
+</div></header>
 
-  <div class="caja" lang="en">
-    <h2>In English</h2>
-    <p><strong>Pelejo: Andean Guardians</strong> is a family platformer made in Peru. Three animal friends travel through the jungle, the Andes and the coast to calm ten guardian spirits from real Peruvian legends. Run, jump and fly through 20 levels, rescue baby animals and discover the stories behind each guardian.</p>
-  </div>
+<div class="hero">
+  <img src="img/logo-hevi.png" alt="Hevi Studios">
+  <h1>Juegos y apps hechos en el Perú</h1>
+  <p>Creamos juegos con alma y herramientas que resuelven problemas de verdad.</p>
+</div>
 
-  <span id="support"></span><h2 id="soporte">Soporte · Support</h2>
-  <p>¿Tienes una pregunta, encontraste un error o no se restauró tu compra? Escríbenos y te respondemos lo antes posible.<br>
-  <span lang="en">Questions, a bug, or a purchase that did not restore? Write to us.</span></p>
-  <p><a href="mailto:hsgf.corp@gmail.com">hsgf.corp@gmail.com</a></p>
-  <p>Para recuperar la compra de <strong>Pelejo completo</strong> en otro dispositivo: abre el juego → Ajustes → <strong>Restaurar compras</strong>, con la misma cuenta de Apple.</p>
+<main class="wrap">
+  <section id="apps">
+    <h2>Nuestras apps</h2>
+
+    <h3 class="cat">Juegos</h3>
+    <div class="grid">
+      <a class="app" href="pelejo.html">
+        <img src="img/app-pelejo.jpg" alt="">
+        <div><h4>Pelejo : Guardianes Andinos</h4>
+        <p>Aventura de plataformas por la selva, los Andes y la costa del Perú. Para toda la familia.</p>
+        <span class="tag">Gratis · iOS</span></div>
+      </a>
+      <a class="app" href="https://apps.apple.com/pe/app/neuroretos/id6767064407">
+        <img src="img/app-neuroretos.jpg" alt="">
+        <div><h4>NeuroRetos</h4>
+        <p>14 minijuegos para entrenar memoria, atención y velocidad mental mientras subes de nivel.</p>
+        <span class="tag">Gratis · iOS</span></div>
+      </a>
+    </div>
+
+    <h3 class="cat">Herramientas y productividad</h3>
+    <div class="grid">
+      <a class="app" href="https://apps.apple.com/pe/app/net-tool-pro/id6768802626">
+        <img src="img/app-netool.jpg" alt="">
+        <div><h4>Net Tool PRO</h4>
+        <p>Diagnóstico de redes y ciberseguridad para ingenieros, sysadmins y pentesters.</p>
+        <span class="tag">iOS</span></div>
+      </a>
+      <a class="app" href="https://apps.apple.com/pe/app/hogarsync-tareas-del-hogar/id6815341445">
+        <img src="img/app-hogarsync.jpg" alt="">
+        <div><h4>HogarSync</h4>
+        <p>Reparte las tareas de la casa en familia, pareja o piso compartido, sin discusiones.</p>
+        <span class="tag">Gratis · iOS</span></div>
+      </a>
+      <div class="app">
+        <div class="ph">?</div>
+        <div><h4>BodegaAgil</h4>
+        <p>Nueva app de Hevi Studios, en camino.</p>
+        <span class="tag soon">Próximamente</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="about">
+    <h2>Nosotros</h2>
+    <p><strong>Hevi Studios</strong> es un estudio independiente de Perú. Hacemos juegos con identidad propia, como Pelejo, que lleva las leyendas peruanas al mundo, y apps útiles para el día a día. Cada app la diseñamos, programamos y cuidamos nosotros mismos.</p>
+    <p lang="en">Hevi Studios is an independent studio from Peru making games with their own identity and useful everyday apps.</p>
+  </section>
+
+  <section id="soporte" class="soporte"><span id="support"></span>
+    <h2>Soporte · Support</h2>
+    <p>¿Tienes una pregunta, encontraste un error o no se restauró tu compra? Escríbenos y te respondemos lo antes posible.<br>
+    <span lang="en">Questions, a bug, or a purchase that did not restore? Write to us.</span></p>
+    <p><a href="mailto:hsgf.corp@gmail.com">hsgf.corp@gmail.com</a></p>
+    <p>Para recuperar la compra de <strong>Pelejo completo</strong> en otro dispositivo: abre el juego → Ajustes → <strong>Restaurar compras</strong>, con la misma cuenta de Apple.</p>
+  </section>
 </main>
+
 <footer>© 2026 Hevi Studios · Perú · <a href="privacidad.html">Política de privacidad / Privacy policy</a></footer>
 </body>
 </html>
