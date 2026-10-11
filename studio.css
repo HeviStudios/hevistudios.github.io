@@ -33,3 +33,11 @@ a.app:hover { border-color: var(--neon); transform: translateY(-2px); }
 footer { margin-top: 56px; border-top: 1px solid var(--line); text-align: center; font-size: 14px; color: #6f806f; padding: 24px 16px 40px; }
 footer a { color: var(--soft); }
 @media (max-width: 560px) { nav { gap: 12px; font-size: 14px; } header a.marca { display: none; } nav { margin-left: 0; } }
+/* legal / long-text pages */
+.doc { padding-top: 32px; max-width: 800px; }
+.doc h1 { font-size: 34px; margin: 0 0 4px; }
+.doc h2 { font-size: 22px; margin: 32px 0 6px; }
+.doc h2::after { display: none; }
+.doc .sub { color: var(--soft); margin-top: 0; }
+.doc p, .doc li { color: var(--soft); }
+.doc strong { color: var(--text); }
